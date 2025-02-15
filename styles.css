@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(135deg, #F8F5F0, #ECE2D0); /* Gradasi lembut */
+  color: #4B3B47; /* Deep Plum */
+  overflow-x: hidden;
+  line-height: 1.6;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+  background: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  border-bottom: 2px solid #E8DCCB; /* Champagne Tint */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #8C6A5D !important; /* Bronze */
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #4B3B47 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #8C6A5D !important;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background: #4B3B47; /* Deep Plum */
+  box-shadow: 0 4px 10px rgba(75, 59, 71, 0.2);
+}
+
+/* Search Button */
+.btn-outline-success {
+  border-color: #8C6A5D;
+  color: #8C6A5D;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.btn-outline-success:hover {
+  background: #8C6A5D;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Carousel */
+.carousel-container {
+  width: 85%;
+  margin: auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel-item img {
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.02);
+}
+
+/* Caption Styling */
+.carousel-caption {
+  background: rgba(75, 59, 71, 0.6); /* Transparan dengan warna Deep Plum */
+  padding: 20px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #FAF7F2; /* Ivory White */
+  text-align: left;
+  left: 8%;
+  bottom: 25%;
+  transform: translateY(50%);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-caption h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #F8F5F0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption p {
+  font-size: 1.15rem;
+  color: #E8DCCB;
+  margin-top: 10px;
+}
+
+.carousel-caption .btn {
+  background: #8C6A5D;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.carousel-caption .btn:hover {
+  background: #4B3B47;
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #8C6A5D;
+  transition: transform 0.3s;
+}
+
+.carousel-indicators button:hover {
+  transform: scale(1.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .carousel-caption {
+    font-size: 1rem;
+    padding: 15px;
+    bottom: 20%;
+    left: 5%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container {
+    width: 95%;
+  }
+
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+}
